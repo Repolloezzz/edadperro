@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(255, 230, 0);
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+h2{
+    color: white;
+}
+h3{
+    color: white;
+    text-align: center;
+}
+.galeria{
+    margin: 10px;
+    width: 50%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(93, 179, 255); 
+    border-radius: 20px;
+}
+.galeria img{
+    padding: 0;
+    border: 10px solid white;
+    border-radius: 20px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+.cont{
+    display: flex;
+    justify-content: center;
+}
+.salida{
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+input[type="text"]{
+    margin: 0px 5px 0px 10px;
+    text-align: center;
+    background-color: white;
+    width: 40%;
+    height: 37px;
+    border-radius: 20px;
+}
+input[type="number"]{
+    margin: 0px 5px 0px 0px;
+    text-align: center;
+    background-color: white;
+    width: 10%;
+    height: 37px;
+    border-radius: 10px;
+}
+.boton{
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    width: 80px;
+    height: 50px;
+    background-color: red;
+    margin-right: 5px;
+}
+section{
+    margin: 0px 20% 0px 20%;
+    background-color: rgba(0, 0, 0, 0.2);
+}

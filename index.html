@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Edad canina</title>
+</head>
+<body>
+    <header>
+        <h1>Edad de tu perro</h1>
+    </header>
+    <section>
+        <div>
+            
+            <div class="center">
+                <div class="galeria">
+                    <div>
+                        <img src="img/oso.jpeg" alt="">
+                        <h3>Oso</h3>
+                    </div>
+                    <div>
+                        <img src="img/chocolatin.jpeg" alt="">
+                        <h3>Chocolatin</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <h2>Nombre y años</h2>
+            </div>
+            <div class="form">
+                <input type="text" id="nombre" value="nombre">
+                <input type="number" id="edadp" value="años">
+                <button class="boton" id="metodoln">Metodo LN</button>
+                <button class="boton" id="metodo7">Metodo 7</button>
+            </div>
+            <div class="cont">
+                <div class="salida" id="salida">
+                    <p>respueta</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <script>
+        var ej=document.getElementById("metodoln")
+        ej.addEventListener("click", edadperro)
+        function edadperro(){
+            var edad=parseInt(document.getElementById("edadp").value)
+            var ehum=(16*Math.log(edad)+31).toFixed(3)
+            var nombre=document.getElementById("nombre").value
+            document.getElementById("salida").innerHTML=nombre+" tiene "+ehum+" años humanos"
+
+        }
+        var ej2=document.getElementById("metodo7")
+        ej2.addEventListener("click", por7)
+        function por7(){
+            var edad=parseInt(document.getElementById("edadp").value)
+            var ehum=edad*7
+            var nombre=document.getElementById("nombre").value
+            document.getElementById("salida").innerHTML=nombre+" tiene "+ehum+" años humanos"
+        }
+        
+    </script>
+</body>
+</html>
